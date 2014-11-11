@@ -267,7 +267,7 @@ class LogStash::Outputs::S3 < LogStash::Outputs::Base
  public
  def register
    require "aws-sdk"
-   @temp_directory = "/Users/arnaud/depop/ww/S3_temp/"
+   @temp_directory = "/opt/logstash/S3_temp/"
 
    if (@tags.size != 0)
        @tag_path = ""
